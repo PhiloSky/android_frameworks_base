@@ -88,7 +88,7 @@ SoftwareRenderer::SoftwareRenderer(
             bufWidth = (mCropWidth + 1) & ~1;
             bufHeight = (mCropHeight + 1) & ~1;
             mAlign = ((mWidth + 15) & -16) * ((mHeight + 15) & -16);
-            mAlign = ((mWidth + 15) & -16) * ((mHeight + 15) & -16);
+            break;
         }
 #endif
 
