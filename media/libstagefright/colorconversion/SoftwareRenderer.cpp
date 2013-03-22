@@ -28,6 +28,10 @@
 #include <ui/GraphicBufferMapper.h>
 #include <gui/ISurfaceTexture.h>
 
+#ifdef QCOM_LEGACY_OMX
+#include <gralloc_priv.h>
+#endif
+
 namespace android {
 
 #ifdef QCOM_HARDWARE
