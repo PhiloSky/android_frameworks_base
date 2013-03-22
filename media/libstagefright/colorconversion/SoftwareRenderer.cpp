@@ -117,9 +117,6 @@ SoftwareRenderer::SoftwareRenderer(
             mNativeWindow.get(),
             GRALLOC_USAGE_SW_READ_NEVER | GRALLOC_USAGE_SW_WRITE_OFTEN
             | GRALLOC_USAGE_HW_TEXTURE | GRALLOC_USAGE_EXTERNAL_DISP
-#ifdef QCOM_LEGACY_OMX
-            | GRALLOC_USAGE_PRIVATE_ADSP_HEAP | GRALLOC_USAGE_PRIVATE_UNCACHED
-#endif
             ));
 
     CHECK_EQ(0,
